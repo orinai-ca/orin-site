@@ -35,8 +35,23 @@ background:rgba(7,16,24,.92);
 backdrop-filter:blur(10px);
 border-bottom:1px solid var(--line);
 }
-.logo{
-font-size:28px;
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #D4AF37;
+}
+
+.logo img {
+  width: 54px;
+  height: 54px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+  font-size:28px;
 font-weight:bold;
 letter-spacing:2px;
 color:var(--gold);
@@ -264,8 +279,10 @@ h2{font-size:34px}
 <body>
 
 <nav>
-<div class="logo">ORIN</div>
-<div class="nav">
+<div class="logo">
+  <img src="a_clean_dark_background_branding_image_logo_lay.png" alt="ORIN AI logo">
+  <span>ORIN AI</span>
+</div><div class="nav">
 <a href="#verify">Verify™</a>
 <a href="#platform">Platform</a>
 <a href="#pricing">Pricing</a>
