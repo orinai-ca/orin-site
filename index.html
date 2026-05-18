@@ -89,6 +89,14 @@ width:420px;
 display:flex;
 justify-content:center;
 }
+.verify-card{
+background:rgba(255,255,255,0.04);
+border:1px solid rgba(255,255,255,0.08);
+backdrop-filter:blur(20px);
+padding:32px;
+border-radius:28px;
+box-shadow:0 20px 60px rgba(0,0,0,0.45);
+}
 .hero h1{
 max-width:620px;
 line-height:1.02;
@@ -125,17 +133,22 @@ margin-top:36px;
 }
 .btn{
 display:inline-block;
-padding:15px 22px;
-border-radius:12px;
+padding:14px 24px;
+border-radius:14px;
+font-weight:600;
 border:1px solid var(--line);
 background:rgba(255,255,255,.08);
 color:white;
 text-decoration:none;
 }
+.btn:hover{
+transform:translateY(-2px);
+transition:0.25s ease;
+}
 .btn.primary{
 background:var(--gold);
 color:#071018;
-font-weight:bold;
+font-weight:600;
 }
 .section{
 padding:74px 60px;
@@ -322,8 +335,8 @@ h2{font-size:34px}
       <div class="badge">Built for the Next Generation of Wellness Clinics</div>
 
       <h1>
-        AI Infrastructure<br>
-        for Modern Clinics.
+        AI Infrastructure for<br>
+        Modern Wellness Clinics.
       </h1>
 
       <p>
