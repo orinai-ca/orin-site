@@ -53,10 +53,17 @@ border-bottom:1px solid var(--line);
 }
   
 .nav{
+position:sticky;
+top:0;
+z-index:100;
+background:rgba(10,14,25,.55);
+backdrop-filter:blur(18px);
+border-bottom:1px solid rgba(255,255,255,.06);
 display:flex;
 align-items:center;
 gap:32px;
 font-size:14px;
+padding:22px 60px;
 }
 .nav a{
 color:var(--muted);
@@ -100,8 +107,19 @@ background:rgba(255,255,255,0.04);
 border:1px solid rgba(255,255,255,0.08);
 backdrop-filter:blur(20px);
 padding:32px;
-border-radius:28px;
+border-radius:24px;
 box-shadow:0 20px 60px rgba(0,0,0,0.45);
+}
+.verify-card::before{
+content:"";
+position:absolute;
+inset:0;
+background:linear-gradient(
+135deg,
+rgba(255,255,255,.10),
+transparent 40%
+);
+pointer-events:none;
 }
 .hero h1{
 max-width:620px;
@@ -145,6 +163,7 @@ display:inline-block;
 padding:14px 24px;
 border-radius:14px;
 font-weight:600;
+transition:all .25s ease;
 border:1px solid var(--line);
 background:rgba(255,255,255,.08);
 color:white;
@@ -158,6 +177,9 @@ transition:0.25s ease;
 background:var(--gold);
 color:#071018;
 font-weight:600;
+.btn:hover{
+transform:translateY(-2px);
+box-shadow:0 10px 30px rgba(0,0,0,.25);
 }
 .section{
 padding:74px 60px;
